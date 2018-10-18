@@ -1,3 +1,10 @@
+"""
+Example Use with openimages:
+
+detect.py --config_path config/yolov3.cfg --weights_path weights/yolov3-openimages.weights -- class_path data/openimages.names
+
+"""
+
 from __future__ import division
 
 from models import *
