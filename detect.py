@@ -1,7 +1,7 @@
 """
 Example Use with openimages:
 
-detect.py --config_path config/yolov3.cfg --weights_path weights/yolov3-openimages.weights -- class_path data/openimages.names
+detect.py --config_path config/yolov3-openimages.cfg --weights_path weights/yolov3-openimages.weights --class_path data/openimages.names
 
 """
 
@@ -28,9 +28,9 @@ from matplotlib.ticker import NullLocator
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--image_folder', type=str, default='data/samples', help='path to dataset')
-parser.add_argument('--config_path', type=str, default='config/yolov3.cfg', help='path to model config file')
-parser.add_argument('--weights_path', type=str, default='weights/yolov3.weights', help='path to weights file')
-parser.add_argument('--class_path', type=str, default='data/coco.names', help='path to class label file')
+parser.add_argument('--config_path', type=str, default='config/yolov3-openimages.cfg', help='path to model config file')
+parser.add_argument('--weights_path', type=str, default='weights/yolov3-openimages.weights', help='path to weights file')
+parser.add_argument('--class_path', type=str, default='data/openimages.names', help='path to class label file')
 parser.add_argument('--conf_thres', type=float, default=0.8, help='object confidence threshold')
 parser.add_argument('--nms_thres', type=float, default=0.4, help='iou thresshold for non-maximum suppression')
 parser.add_argument('--batch_size', type=int, default=1, help='size of the batches')
